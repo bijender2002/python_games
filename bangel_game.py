@@ -2,7 +2,7 @@
 
 import random
 def getSecretNum(numDigits):
-# Returns a string that is numDigits long, made up of unique random digits.
+# It will returns a string that is numDigits long, made up of unique random digits.
   numbers = list(range(10))
   random.shuffle(numbers)
   secretNum = ''
@@ -11,7 +11,7 @@ def getSecretNum(numDigits):
   return secretNum
 
 def getClues(guess, secretNum):
-# Returns a string with the pico, fermi, None clues to the user.
+# It will returns a string with the pico, fermi, None clues to the user.
   if guess == secretNum:
     return 'You got it!'
 
@@ -26,7 +26,7 @@ def getClues(guess, secretNum):
   return ' '.join(clue)
 
 def isOnlyDigits(num):
-# Returns True if num is a string made up only of digits. Otherwise returns False.
+#It will returns True if num is a string made up only of digits. Otherwise returns False.
   if num == 'secretNum':
     return True
 
@@ -41,9 +41,6 @@ def playAgain():
 		return False
 	else:
 		return True
-	
-	# elif play=="n":
-	# 	return False
 		
 NUMDIGITS = 3
 MAXGUESS = 10
