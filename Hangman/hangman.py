@@ -2,7 +2,7 @@ import string
 from words import choose_word
 from images import IMAGES
 def is_word_guessed(secret_word,letters_guessed):
-    # '''
+   
     # secret_word: string, the secret word to guess.
 
     # Hangman game yeh start karta hai:
@@ -12,11 +12,11 @@ def is_word_guessed(secret_word,letters_guessed):
 
     # * Har round mei user se ek letter guess karne ko bolte hai
 
-    # * Har guess ke baad user ko feedback do ki woh guess uss
+    # * Har guess ke baad user ko feedback dete hai ki woh guess uss
     #   word mei hai ya nahi
 
     # * Har round ke baar, user ko uska guess kiya hua partial word
-    #   display karo, aur underscore use kar kar woh letters bhi dikhao
+    #   display karta hai, aur underscore use kar kar woh letters bhi dikha deta hai
     #   jo user ne abhi tak guess nahi kiye hai
 
     # '''
